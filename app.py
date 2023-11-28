@@ -1,10 +1,6 @@
 from flask import Flask
-
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return '¡Hola, mundo! Este es un ejemplo de Flask.'
-
-if __name__ == '__main__':
-    app.run(debug=True)
+def hello_world():
+    return 'Hello, World!'
